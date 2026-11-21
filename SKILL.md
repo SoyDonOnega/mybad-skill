@@ -29,7 +29,7 @@ Paths in this file are relative to the skill root (the folder that contains this
    - `value` — a judgment or preference that data informs but cannot settle.
    For each, write the falsifier: the data that would prove it wrong.
 4. **Refute.** Spawn an isolated subagent with only `agents/mybad-refuter.md`, the steelman and the claim list. It searches for disconfirming data first, then for supporting data, and returns evidence per claim.
-5. **Check the data.** For every number the refuter returns: it has a source, a date and a link; the source is primary or close to it (official statistics, datasets, filings, peer-reviewed studies, original reports) over press or blogs; units and definitions match the claim. Redo every calculation (ratios, growth, base rates, orders of magnitude) and show it. Drop or flag what fails.
+5. **Check the data.** For every number the refuter returns: it has a source, a date and a link; the source is primary or close to it (official statistics, datasets, filings, peer-reviewed studies, original reports) over press or blogs; units and definitions match the claim. A source tagged `abstract` or `not opened`, or a judgment or ruling marked `unverified`, does not support a verdict alone: flag it in the reviewer note and lower the confidence. Redo every calculation (ratios, growth, base rates, orders of magnitude) and show it. Drop or flag what fails.
 6. **Verdict.** Per claim and overall: `holds` · `weakened` · `wrong` · `unsettled` (data missing or contradictory). Confidence high / medium / low, with the reason. For `value` claims: say which part the data moved and which part stays a choice.
 7. Produce the output and stop.
 
